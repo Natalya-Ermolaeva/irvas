@@ -1,4 +1,4 @@
-export default {
+module.exports = {
     'env': {
         'browser': true,
         'es2021': true
@@ -12,7 +12,7 @@ export default {
     },
     'rules': {
         'indent': [
-            'warn',
+            'error',
             4
         ],
         'linebreak-style': [
