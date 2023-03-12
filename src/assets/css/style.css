@@ -13,6 +13,19 @@ body {
   color: #000000;
 }
 
+.faded {
+  animation: faded;
+  animation-duration: 1.5s;
+}
+
+@keyframes faded {
+  from {
+    opacity: 0.1;
+  } to {
+    opacity: 1;
+  }
+}
+
 .status {
   display: block;
   color: red;
@@ -219,14 +232,6 @@ textarea:focus {
   font-weight: 700;
   font-style: normal;
   color: #55a831;
-  /*p {
-				display: inline-block;
-			vertical-align: top;
-				font-size: 1.4rem;
-				line-height: 1.2;
-				.bold();
-				color: @green;
-			}*/
 }
 
 .header_btn_wrap {
@@ -251,7 +256,6 @@ textarea:focus {
 .header .working_hours {
   height: 10rem;
   display: table;
-  /*text-align: right;*/
 }
 
 .header .working_hours_img {
@@ -296,7 +300,6 @@ textarea:focus {
   font-weight: 700;
   font-style: normal;
   color: #333333;
-  /*border: 1px solid blue;*/
 }
 
 .header .contact_us_wrap a img {
@@ -320,7 +323,6 @@ textarea:focus {
 
 .main h1 {
   margin: 0;
-  /*margin-top: -4rem;*/
   font-size: 5.5rem;
   line-height: 1.5;
   font-family: 'Open Sans', sans-serif;
@@ -380,10 +382,6 @@ textarea:focus {
   font-size: 1.8rem;
   font-weight: 600;
   text-decoration: underline;
-  /*&:focus {
-				text-decoration: none;
-				color: #454545;
-			}*/
 }
 
 .glazing_block a:hover {
@@ -517,18 +515,9 @@ textarea:focus {
   border: none;
   text-decoration: none;
   color: #0089cd;
-  /*border-top: 1rem solid @blue;
-				height: 8rem;
-				padding: 2rem 1rem;
-				background: -webkit-linear-gradient(-90deg, #ebebeb 0%, #ebebeb 0%, rgba(255, 255, 255, 0) 100%);
-				background: -moz-linear-gradient(-90deg, #ebebeb 0%, #ebebeb 0%, rgba(255, 255, 255, 0) 100%);
-				background: -o-linear-gradient(-90deg, #ebebeb 0%, #ebebeb 0%, rgba(255, 255, 255, 0) 100%);
-				background: -ms-linear-gradient(-90deg, #ebebeb 0%, #ebebeb 0%, rgba(255, 255, 255, 0) 100%);
-				background: linear-gradient(180deg, #ebebeb 0%, #ebebeb 0%, rgba(255, 255, 255, 0) 100%);*/
 }
 
 .decoration_item .no_click {
-  /*border: 1px solid red;*/
   height: 8rem;
   padding: 2rem 0;
   border-top: 1rem solid #f7f7f7;
@@ -719,13 +708,6 @@ textarea:focus {
   color: black;
 }
 
-
-
-
-
-
-
-
 /*Contacts*/
 .contacts {
   padding: 6rem 0;
@@ -803,12 +785,10 @@ textarea:focus {
 .footer .contacts {
   padding: 0;
   margin: auto;
-  /*border: 1px solid red;*/
   text-align: right;
 }
 
 .footer .contacts a {
-  /*border: 1px solid blue;*/
   display: block;
 }
 
@@ -996,11 +976,6 @@ textarea:focus {
   width: 40rem;
   padding: 1rem 5rem 4rem;
   background-color: #ffffff;
-  /*	label {
-			margin-bottom: 1rem;
-			font-size: 1.5rem;
-			.regular();
-		}*/
 }
 
 .popup_calc_profile_content h2 {
@@ -1211,7 +1186,6 @@ textarea:focus {
   .header .contact_us_wrap a {
     font-size: 1.4rem;
   }
-
 
   .header .contact_us_wrap .phone_link {
     font-size: 1.15rem;
@@ -1442,12 +1416,10 @@ textarea:focus {
   .footer .contacts {
     padding: 0;
     margin: auto;
-    /*border: 1px solid red;*/
     text-align: center;
   }
 
   .footer .contacts a {
-    /*border: 1px solid blue;*/
     display: block;
   }
 
@@ -1548,8 +1520,6 @@ textarea:focus {
   .section_header_sub {
     margin-top: 1rem;
   }
-
-
 
   .header .working_hours p {
     font-size: 1.2rem;
@@ -1808,13 +1778,10 @@ textarea:focus {
 /* small devices, tablets */
 @media only screen and (max-width: 768px) {
   .animated {
-    /*css transitions*/
     -webkit-transition-property: none !important;
     transition-property: none !important;
-    /*css transforms*/
     -webkit-transform: none !important;
     transform: none !important;
-    /*css animations*/
     -webkit-animation: none !important;
     animation: none !important;
   }
