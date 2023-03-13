@@ -1,7 +1,8 @@
 const images = () => {
     const imgPopup = document.createElement('div'),
         imgBig = document.createElement('img'),
-        works  = document.querySelector('.works');
+        works  = document.querySelector('.works'),
+        scrollWidth = window.innerWidth - document.documentElement.clientWidth;
 
     imgPopup.classList.add('popup-img');
     works.append(imgPopup);
@@ -22,11 +23,13 @@ const images = () => {
             let path = target.parentNode.getAttribute('href');
             imgBig.setAttribute('src', path);
             document.body.style.overflow = 'hidden';
+            document.body.style.marginRight = `${scrollWidth}px`;
         }
 
         if (target && target.matches('div.popup-img')) {
             imgPopup.style.display = 'none';
             document.body.style.overflow = '';
+            document.body.style.marginRight = '0px';
         }
     });
 };
